@@ -9,11 +9,16 @@ var link = params[0];
 var price = params[1];
 var name = params[2];
 var ebayprice = params[3];
+var usedprice = params[4];
+var site = params[5];
 if (link) {
   // Replace the placeholder text with the actual count.
 
   var dom1 = document.querySelector('#price');
  dom1.innerText = price;
+  if (name.length>40) {
+  	name = name.substring(0,40) + "...";
+  }
   var dom2 = document.querySelector('#name');
  dom2.innerText = name;
  
@@ -21,7 +26,16 @@ if (link) {
  dom3.innerText = ebayprice;
   var dom4= document.querySelector('#link');
  dom4.href= link;
- console.log(link);
+  var dom7= document.querySelector('#site');
+  console.log(site);
+ dom7.innerText= site;
+ if (usedprice!=price) {
+ 	console.log(link);
+ 	var dom5= document.querySelector('#usedtext');
+ 	dom5.style.display = 'inline';
+ 	var dom6 = dom5.querySelector('#usedPrice');
+ 	dom6.innerText = usedprice;
+ }
 
 
   // console.log(link);

@@ -32,12 +32,15 @@
         margin-left: 20px;
         z-index: 5000;
       }
+      #usedtext {
+        display: none;
+      }
     </style>
   </head>
   <body>
     <div id = "main" >
      <div id = "divleft" >
-      Why buy <em id = "name">sandwich</em> for <em>$</em><em id = "price">X</em> on Amazon when you can get it on eBay for <em>$</em><em id="ebayPrice">X</em> right now? 
+      Why buy <em id = "name">sandwich</em> for <em>$</em><em id = "price">X</em> <span id ="usedtext"> or even <em>$</em><em id = "usedPrice">X</em> </span> on <span id = "site">X</span> when you can get it on <em>eBay</em> for <em>$</em><em id="ebayPrice">X</em> right now? 
     </div>
     <div id = "divright"  >
       <a id = "link" href = "http://www.google.com" target ="_blank"><button>Buy it on eBay</button></a>

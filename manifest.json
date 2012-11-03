@@ -1,7 +1,7 @@
 {
-  "name" : "SandwichBar",
+  "name" : "eBayBay",
   "version" : "1.0.1",
-  "description" : "Shows an infobar on pages which contain the word 'sandwich'",
+  "description" : "Shows an optional eBay redirecter when trying to buy books on amazon.",
   "background" : {
     "scripts": ["background.js"]
   },
